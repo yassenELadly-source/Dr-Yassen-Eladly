@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 حل امتحانات التشريح - الفرقة الرابعة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 900px;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+        
+        .left-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border-right: 2px dashed #eee;
+        }
+        
+        .right-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pdf-preview {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 25px;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s;
+        }
+        
+        .pdf-preview:hover {
+            transform: translateY(-5px);
+            border-color: #4a6491;
+        }
+        
+        .pdf-icon {
+            font-size: 4rem;
+            color: #e63946;
+            margin-bottom: 15px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(42, 67, 113, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(42, 67, 113, 0.4);
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        .qr-container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 2px solid #4a6491;
+            margin-bottom: 20px;
+        }
+        
+        .qr-container h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .instructions {
+            background: #f1f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-right: 5px solid #4a6491;
+        }
+        
+        .instructions h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .instructions h4 i {
+            margin-left: 10px;
+            color: #4a6491;
+        }
+        
+        .instructions ol {
+            padding-right: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .left-section {
+                border-right: none;
+                border-bottom: 2px dashed #eee;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-graduation-cap"></i> حل امتحانات التشريح</h1>
+            <p>الفرقة الرابعة - كلية الطب | مواد دراسية شاملة ومنظمة</p>
+        </div>
+        
+        <div class="content">
+            <div class="left-section">
+                <div class="pdf-preview">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h2>ملف حلول الامتحانات</h2>
+                    <p>هذا الملف يحتوي على حلول نماذج امتحانات سابقة لمادة التشريح، مع شرح مفصل للإجابات النموذجية.</p>
+                    <p><strong>حجم الملف:</strong> ~15 MB | <strong>الصيغة:</strong> PDF</p>
+                    
+                    <a href="https://github.com/username/repo-name/raw/main/anatomy-exams-solutions.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i> تنزيل الملف مباشرة
+                    </a>
+                </div>
+                
+                <div class="instructions">
+                    <h4><i class="fas fa-info-circle"></i> كيفية الاستفادة من الملف:</h4>
+                    <ol>
+                        <li>قم بتنزيل الملف عبر الزر بالأعلى أو مسح QR Code</li>
+                        <li>افتح الملف على جهازك باستخدام أي قارئ PDF</li>
+                        <li>استخدم الفهرس للانتقال إلى الموضوع المطلوب</li>
+                        <li>يمكنك الطباعة للدراسة خارج الشاشة</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <div class="qr-container">
+                    <h3><i class="fas fa-qrcode"></i> مسح لتنزيل الملف</h3>
+                    <p>استخدم كاميرا هاتفك لمسح الكود أدناه:</p>
+                    
+                    <!-- هنا هتحط صورة QR Code اللي هتطلعها من الخطوة التالية -->
+                    <img src="YOUR_QR_CODE_IMAGE_URL" alt="QR Code for Anatomy PDF" width="250" height="250" id="qr-image">
+                    
+                    <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                        <i class="fas fa-mobile-alt"></i> وجه الكاميرا نحو الكود
+                    </p>
+                </div>
+                
+                <div class="instructions">
+                    <h4><i class="fas fa-lightbulb"></i> مزايا هذه الصفحة:</h4>
+                    <p>• واجهة بروفيشنال تليق بالمحتوى التعليمي</p>
+                    <p>• تنزيل آمن وسريع للملف</p>
+                    <p>• توفر عبر جميع الأجهزة (موبايل، كمبيوتر)</p>
+                    <p>• سهولة المشاركة مع الزملاء</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 قسم التشريح - جميع الحقوق محفوظة | تم التطوير باستخدام GitHub Pages</p>
+            <p style="margin-top: 5px; opacity: 0.8;">
+                <i class="fas fa-envelope"></i> للاستفسارات: email@example.com
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // رابط ملف PDF الخاص بك - ضعه هنا
+        const pdfUrl = "https://github.com/username/repo-name/raw/main/anatomy-exams-solutions.pdf";
+        
+        // إنشاء QR Code ديناميكي (بدون الحاجة لصورة مسبقة)
+        // يمكنك استخدام هذه المكتبة أو إنشاء QR مسبقاً كما تفضل
+        // هذا كود احتياطي في حال أردت إنشاء QR ديناميكي
+        
+        console.log("الصفحة جاهزة! رابط الملف:", pdfUrl);
+    </script>
+</body>
+</html>
