@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملفات ياسين</title>
+    <style>
+        body {
+            background: #0d1117;
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 60px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 24px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        a:hover {
+            background: #2ea043;
+        }
+    </style>
+</head>
+<body>
+    <h1>ملفات ياسين</h1>
+    <p>اضغط على الزر لفتح ملف الـ PDF</p>
+
+    <a href="YOURFILE.pdf" target="_blank">فتح الملف</a>
+</body>
+</html>
