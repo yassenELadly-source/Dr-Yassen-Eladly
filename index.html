@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ملفات طبية | الدكتور ياسن العدلي</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #0c2461, #1e3799);
+            color: white;
+            padding: 30px;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            color: #333;
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #0c2461;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #1e3799;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .file-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 8px solid #0c2461;
+            text-align: right;
+        }
+        .file-info {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #0c2461, #1e3799);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 25px 10px;
+            transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(12, 36, 97, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(12, 36, 97, 0.5);
+            background: linear-gradient(to right, #1a3c8a, #2a4bb8);
+        }
+        .qr-section {
+            background: #e3f2fd;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 40px 0;
+            border: 3px solid #0c2461;
+        }
+        .qr-code {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        .steps {
+            background: #f1f8ff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: right;
+            margin-top: 30px;
+            border-right: 6px solid #1e3799;
+        }
+        .steps ol {
+            padding-right: 25px;
+            line-height: 2.2;
+            font-size: 1.1rem;
+        }
+        .footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 1rem;
+            border-top: 2px solid #eee;
+            padding-top: 25px;
+        }
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .pdf-icon {
+            color: #e63946;
+        }
+        .qr-icon {
+            color: #0c2461;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .btn {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- العنوان -->
+        <div style="margin-bottom: 40px;">
+            <h1><i class="fas fa-stethoscope"></i> ملفات طبية تعليمية</h1>
+            <h2>إعداد: الدكتور ياسن العدلي | الفرقة الرابعة - كلية الطب</h2>
+        </div>
+        
+        <!-- معلومات الملف -->
+        <div class="file-box">
+            <div class="icon pdf-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <h2 style="color: #0c2461;">📘 ملف الحقنة داخل الأدمة (INTRADERMAL Injection)</h2>
+            <div class="file-info">
+                <p><strong>📄 وصف الملف:</strong> شرح مفصل ومصور لتقنية الحقنة داخل الأدمة مع الخطوات العملية والتطبيقات السريرية.</p>
+                <p><strong>💾 الحجم:</strong> ~5 ميجابايت</p>
+                <p><strong>📅 آخر تحديث:</strong> 2023</p>
+                <p><strong>🎯 الفئة:</strong> مهارات سريرية - عملي</p>
+            </div>
+            
+            <!-- زر التحميل -->
+            <a href="https://github.com/yassenELadly-source/Dr-Yassen-Eladly/blob/2c8ddd83b15ef332e1f983446c532ffa4c42c5c1/INTRADERMAL%20Inj-Preparation-YASSEN%20ELADLY.pdf" 
+               class="btn" 
+               target="_blank">
+               <i class="fas fa-download"></i> عرض وتحميل الملف
+            </a>
+            <p style="color: #666; margin-top: 15px;">سيتم فتح الملف على GitHub ثم يمكنك تحميله</p>
+        </div>
+        
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <div class="icon qr-icon">
+                <i class="fas fa-qrcode"></i>
+            </div>
+            <h2 style="color: #0c2461;">📱 مشاركة الملف عبر QR Code</h2>
+            <p>اسكن الكود بكاميرا الموبايل لفتح هذه الصفحة ومشاركة الملف مع الزملاء</p>
+            
+            <div class="qr-code">
+                <h3>🔍 مسح الكود</h3>
+                <!-- هنا هتحط صورة QR بعد ما تعملها -->
+                <img src="ضع_هنا_رابط_صورة_QR_بعد_ما_تكون_عملتها" 
+                     width="280" 
+                     height="280" 
+                     alt="QR Code للملف الطبي"
+                     style="border: 1px solid #ddd; border-radius: 10px;">
+                <p style="margin-top: 15px; color: #555;">
+                    <i class="fas fa-mobile-alt"></i> وجه الكاميرا نحو الكود
+                </p>
+            </div>
+            
+            <p style="color: #666; margin-top: 20px;">
+                <i class="fas fa-lightbulb"></i> يمكنك طباعة هذا الكود ووضعه في المكتبة أو مشاركته رقمياً
+            </p>
+        </div>
+        
+        <!-- خطوات الاستخدام -->
+        <div class="steps">
+            <h3><i class="fas fa-list-ol"></i> كيفية استخدام الملف:</h3>
+            <ol>
+                <li>اضغط على زر "عرض وتحميل الملف" لفتح الملف على GitHub</li>
+                <li>اضغط على زر <strong>Download</strong> في صفحة GitHub لتحميل النسخة</li>
+                <li>افتح الملف على جهازك باستخدام أي برنامج قراءة PDF</li>
+                <li>للمشاركة: استخدم QR Code أعلاه أو رابط هذه الصفحة</li>
+                <li>للاستفسارات: يمكنك التواصل عبر حساب GitHub</li>
+            </ol>
+        </div>
+        
+        <!-- الفوتر -->
+        <div class="footer">
+            <p><strong>© 2023 - جميع الحقوق محفوظة للمحتوى التعليمي</strong></p>
+            <p>تم التطوير باستخدام GitHub Pages | رابط المستودع: 
+                <a href="https://github.com/yassenELadly-source/Dr-Yassen-Eladly" 
+                   style="color: #1e3799; text-decoration: none;">
+                   github.com/yassenELadly-source/Dr-Yassen-Eladly
+                </a>
+            </p>
+            <p style="margin-top: 15px; color: #888; font-size: 0.9rem;">
+                <i class="fas fa-exclamation-circle"></i> هذا الموقع لأغراض تعليمية بحتة
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // إضافة تأثير عند الضغط على الزر
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+        
+        // رسالة تحميل
+        console.log("صفحة الملفات الطبية جاهزة!");
+        console.log("رابط الملف: https://github.com/yassenELadly-source/Dr-Yassen-Eladly/blob/2c8ddd83b15ef332e1f983446c532ffa4c42c5c1/INTRADERMAL%20Inj-Preparation-YASSEN%20ELADLY.pdf");
+    </script>
+</body>
+</html>
